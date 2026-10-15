@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <header class="head">
+
+        <nav class="nav">
+
+            <div class="header">
+                <h1>Student Registration Form</h1>
+            </div>
+
+            <div class="container">
+
+                <span class="input-n">Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="name" class="input-searchbar" type="text" placeholder=" Enter your name"></span>
+
+                <span class="input-e">Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="email" class="input-searchbar" type="email" placeholder=" Enter Email"></span>
+
+                <span class="input-p">Password : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="password" class="input-searchbar" type="password" placeholder=" password"></span>
+
+                <div class="dropdown">
+                    <label for="Courses"> Course : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select id="course" class="input-searchbar-drop" name="course" id="course">
+                    <option value="">Select Course</option>
+                    <option value="English">English</option>
+                    <option value="Maths">Maths</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Computer">Computer</option>
+                    <option value="C Programming">C Programming</option>
+                </select>
+                </div>
+
+            </div>
+
+            <div class="footer">
+                
+                <button class="submit-btn" onclick="submitForm()">Submit</button>
+            </div>
+
+            <div id="result" style="margin-top:20px; text-align:center; font-size:22px; font-weight:bold;"></div>
+
+        </nav>
+
+    </header>
+
+
+    <script src="./file.js"></script>
+</body>
+</html>
